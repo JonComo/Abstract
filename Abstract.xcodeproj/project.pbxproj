@@ -24,6 +24,7 @@
 		860B37FC199F38D3000BB599 /* ABNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 860B37FB199F38D3000BB599 /* ABNetwork.m */; };
 		860B37FF199F38EB000BB599 /* ABColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = 860B37FE199F38EB000BB599 /* ABColumn.m */; };
 		860B3802199F3917000BB599 /* ABNeuron.m in Sources */ = {isa = PBXBuildFile; fileRef = 860B3801199F3917000BB599 /* ABNeuron.m */; };
+		860B3805199F4283000BB599 /* ABNetworkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 860B3804199F4283000BB599 /* ABNetworkView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		860B37FE199F38EB000BB599 /* ABColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABColumn.m; sourceTree = "<group>"; };
 		860B3800199F3917000BB599 /* ABNeuron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABNeuron.h; sourceTree = "<group>"; };
 		860B3801199F3917000BB599 /* ABNeuron.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABNeuron.m; sourceTree = "<group>"; };
+		860B3803199F4283000BB599 /* ABNetworkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABNetworkView.h; sourceTree = "<group>"; };
+		860B3804199F4283000BB599 /* ABNetworkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABNetworkView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 				860B37FE199F38EB000BB599 /* ABColumn.m */,
 				860B3800199F3917000BB599 /* ABNeuron.h */,
 				860B3801199F3917000BB599 /* ABNeuron.m */,
+				860B3803199F4283000BB599 /* ABNetworkView.h */,
+				860B3804199F4283000BB599 /* ABNetworkView.m */,
 				860B37DD199F38C1000BB599 /* Images.xcassets */,
 				860B37CC199F38C1000BB599 /* Supporting Files */,
 			);
@@ -267,6 +272,7 @@
 			files = (
 				860B37D2199F38C1000BB599 /* main.m in Sources */,
 				860B37DC199F38C1000BB599 /* ABViewController.m in Sources */,
+				860B3805199F4283000BB599 /* ABNetworkView.m in Sources */,
 				860B37D6199F38C1000BB599 /* ABAppDelegate.m in Sources */,
 				860B3802199F3917000BB599 /* ABNeuron.m in Sources */,
 				860B37FF199F38EB000BB599 /* ABColumn.m in Sources */,

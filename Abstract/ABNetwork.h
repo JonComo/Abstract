@@ -10,10 +10,14 @@
 
 #import "ABColumn.h"
 
+@class ABNetworkView;
+
 @interface ABNetwork : NSObject
 
 @property (nonatomic, strong) NSMutableArray *columns;
+@property (nonatomic, weak) ABNetworkView *view;
 
 -(void)inputActiveColumn:(NSArray *)indeces;
+-(NSArray *)activeColumns;
 
 @end

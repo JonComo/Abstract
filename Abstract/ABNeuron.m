@@ -28,6 +28,7 @@
     if (self.energy > 0.2){
         NSLog(@"Neuron: <%p> predicted", self);
         [self.column neuronWasPredictive:self];
+        //strengthen connections to previously active neurons
     }else{
         NSLog(@"Neuron: <%p> activated", self);
     }

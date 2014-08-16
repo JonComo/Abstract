@@ -8,6 +8,8 @@
 
 #import "ABNetwork.h"
 
+#import "ABNetworkView.h"
+
 @implementation ABNetwork
 
 -(id)init
@@ -22,6 +24,7 @@
         
         for (int i = 0; i < 16; i++){
             ABColumn *column = _columns[i];
+            column.index = i;
             for (ABNeuron *neuron in column.neurons){
                 int index = [column.neurons indexOfObject:neuron];
                 //link up to other neurons
@@ -52,6 +55,20 @@
     for (ABColumn *column in self.columns){
         [column processState];
     }
+    
+    //Update visualizaiton
+    [self.view setNeedsDisplay];
+}
+
+-(NSArray *)activeColumns
+{
+    NSMutableArray *active = [NSMutableArray array];
+    for (ABColumn *column in self.columns){
+        if ([column isActive])
+            [active addObject:column];
+    }
+    
+    return active;
 }
 
 @end

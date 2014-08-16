@@ -13,8 +13,10 @@
 @interface ABColumn : NSObject
 
 @property (nonatomic, strong) NSMutableArray *neurons;
+@property int index;
 
 -(void)activate;
+-(BOOL)isActive;
 -(void)processState;
 
 -(void)neuronWasPredictive:(ABNeuron *)neuron;
